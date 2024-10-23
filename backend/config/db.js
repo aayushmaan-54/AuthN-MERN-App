@@ -5,7 +5,7 @@ const { default: mongoose } = require('mongoose');
 
 const Mongo_URI = process.env.MongoDB_URI;
 
-if (!MONGODB_URI) {
+if (!Mongo_URI) {
   console.error('MONGODB_URI is not defined in environment variables');
   process.exit(1);
 }
